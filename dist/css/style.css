@@ -1,4 +1,7 @@
-@import url(../fonts/Clash-Regular.woff);
+@font-face {
+  font-family: "Clash-Regular";
+  src: url(/assets/fonts/Clash-Regular.woff) format(woff);
+}
 
 * {
   margin: 0;
