@@ -1,51 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jomok Squad</title>
 
     <!-- Icon -->
-    <link rel="shortcut icon" href="assets/img/user/harit.jpeg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/img/icon/logo-clan.png"
+      type="image/png"
+    />
 
     <!-- Style -->
-    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/style.css" />
 
     <!-- Fonts -->
-     
-</head>
-<body>
+
+    <!-- Box Icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Header -->
-     <header>
-    <nav>
-        <a href="#home">
-            JomokSquad
+    <header class="header" id="header">
+      <nav class="navbar container">
+        <a href="#home" class="nav__logo">
+          <img
+            src="assets/img/icon/logo-clan.png"
+            alt="logo-clan"
+            class="nav__logo-icon"
+            width="40"
+          />
+          Jomok Squad
         </a>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Home</a></li>
-        </ul>
-    </nav>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link active" href="#">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Member</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">FAQ</a>
+            </li>
+          </ul>
+          <div class="nav__extra">
+            <a class="login__btn btn" href="#login">Login</a>
+            <a class="masuk__clan-btn btn" href="#clan">Masuk Clan</a>
+          </div>
+        </div>
+        <div class="nav__btns">
+          <a class="login__btn btn" href="#login">Login</a>
+          <a class="masuk__clan-btn btn" href="#clan">Masuk Clan</a>
+        </div>
+        <i class='bx bxs-grid-alt nav__toggle' id="nav-toggle"></i>
+      </nav>
     </header>
     <!-- main -->
-     <main class="main">
-        <section class="home" id="home">
-            <div class="container"></div>
-     </section>
-        <section class="about" id="about">
-            <div class="container"></div>
-     </section>
-        <section class="member" id="member">
-            <div class="container"></div>
-     </section>
-        <section class="faq" id="faq">
-            <div class="container"></div>
-     </section>
+    <main class="main">
+      <section class="home" id="home">
+        <div class="container"></div>
+      </section>
+      <section class="about" id="about">
+        <div class="container"></div>
+      </section>
+      <section class="member" id="member">
+        <div class="container"></div>
+      </section>
+      <section class="faq" id="faq">
+        <div class="container"></div>
+      </section>
     </main>
 
-    <footer> </footer>
+    <footer></footer>
 
-</body>
+    <script src="dist/js/index.js"></script>
+  </body>
 </html>
