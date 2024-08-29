@@ -101,7 +101,7 @@ input {
 
 /* Reusable */
 .container {
-  max-width:1200px ;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -122,7 +122,7 @@ input {
 }
 
 .btn:hover {
-    background: linear-gradient(
+  background: linear-gradient(
     0deg,
     rgba(243, 66, 48, 1) 0%,
     rgba(241, 212, 18, 1) 100%
@@ -137,6 +137,11 @@ input {
 /* Header */
 .header {
   background-color: var(--dark-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .navbar {
@@ -183,16 +188,27 @@ input {
 }
 
 .nav__menu .nav__list a::after {
-  content: '';
+  content: "";
   display: block;
-  padding-bottom: .3rem;
-  border-bottom: .2rem solid var(--secondary-color);
+  padding-bottom: 0.3rem;
+  border-bottom: 0.2rem solid var(--secondary-color);
   transform: scaleX(0);
-  transition: .3s linear;
+  transition: 0.3s linear;
 }
 
 .nav__menu .nav__list a:hover::after {
-  transform: scaleX(.7);
+  transform: scaleX(0.7);
+}
+
+/* Home */
+
+.home {
+  background-image: url(/assets/img/background/background-cerah.jpg);
+  opacity: 0.7;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  padding-top: 7rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -203,7 +219,7 @@ input {
   .nav__menu {
     display: none;
   }
-  
+
   .nav__menu.active {
     display: block;
     position: absolute;
@@ -235,12 +251,11 @@ input {
   }
 }
 
-.img_belakang{
+.img_belakang {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 100vh;
   display: flex;
- 
 }
