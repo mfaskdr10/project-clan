@@ -207,7 +207,7 @@ input {
   .nav__menu.active {
     display: block;
     position: absolute;
-    top: 6rem;
+    top: 6.8rem;
     right: 1rem;
     padding: 50px;
     background-color: var(--dark-color);
