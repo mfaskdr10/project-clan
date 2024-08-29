@@ -101,7 +101,7 @@ input {
 
 /* Reusable */
 .container {
-  max-width: 1200px;
+  max-width:1200px ;
   margin-left: auto;
   margin-right: auto;
 }
@@ -233,4 +233,14 @@ input {
   .navbar .nav__toggle {
     display: block;
   }
+}
+
+.img_belakang{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+ 
 }
