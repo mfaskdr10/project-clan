@@ -203,12 +203,47 @@ input {
 /* Home */
 
 .home {
-  background-image: url(/assets/img/background/background-cerah.jpg);
-  opacity: 0.7;
-  height: 100vh;
-  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 7rem;
+  object-fit: cover;
+  background-position: top;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-image: url("/assets/img/background/bg-header.jpg");
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  right: 0;
+  z-index: 1;
+  background: linear-gradient(
+    0deg,
+    var(--dark-color) 2%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
+
+.home .container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.home .container h1 {
+  font-size: var(--h1-font-size);
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-shadow: 5px 5px 10px var(--dark-color);
+}
+
+.about {
+  background-color: var(--dark-color);
+  min-height: 100vh;
 }
 
 @media screen and (max-width: 992px) {
@@ -218,6 +253,7 @@ input {
 
   .nav__menu {
     display: none;
+    top: 0;
   }
 
   .nav__menu.active {
